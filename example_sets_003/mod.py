@@ -21,3 +21,7 @@ def func01(x):
 
     '''
     print(x)
+
+class User:
+    def GetInfo(self):
+        print("Hello")

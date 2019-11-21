@@ -1,5 +1,10 @@
-import mod
+#import mod
+from mod import User
+# import mod as m  #-> for alias definition
+#result = m.Ips
+#print(result)
 
-result = mod.IPs
 
+xuser = User()
+result = xuser.GetInfo()
 print(result)
