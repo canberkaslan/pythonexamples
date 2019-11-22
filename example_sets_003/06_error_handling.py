@@ -12,3 +12,20 @@ for x in list:
         print(result)
     except ValueError:
         continue
+
+def checkPassword(parola):
+    tr_chars ="İıöçşüğ"
+    for x in parola:
+        if x in tr_chars:
+            raise TypeError('Parola TR karakteri içermemelidir')
+        else:
+            pass
+    print('Şifre Gecerlidir')
+
+#Usage
+pwd = input('Parola Giriniz:')
+
+try:
+    checkPassword(pwd)
+except TypeError as err:
+    print(err)
